@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: "Genshin Impact DRIP FONT", "Segoe UI", Roboto, Inter;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 5px 10.9px 0 rgba(0, 0, 0, 0.41);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-main {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-title {
+    align-self: stretch;
+    font-family: "Genshin Impact DRIP FONT";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(90deg, #805DFA 0%, #2993EE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background: #6A7CF7;
+    border-radius: 10px;
+}
+
+/* RIGHT - ICONS */
+.website-config {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
