@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stella-CREST</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Linking HTML to SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 </head>
 
-<body>
+<body class="body-page">
     <header class="header">
         <nav class="nav-bar">
             <div class="nav-left">
@@ -34,15 +37,46 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-page">
         <section class="shop-section shop-carousel">
-            <h1 class="carousel-title">TRENDING</h1>
+            <h1 class="section-title">TRENDING</h1>
+
+            <div class="carousel-container swiper">
+                <ul class="carousel-list swiper-wrapper">
+                    <li class="carousel-item swiper-slide">
+                        <a href="#" class="carousel-link">
+                            <img src="assets/carousel-assets/sakamoto-days.png" alt="sakamoto-days" class="carousel-image sakamoto-days">
+                            <h2 class="carousel-title">SAKAMOTO DAYS</h2>
+                    </li>
+                    <li class="carousel-item swiper-slide">
+                        <a href="#" class="carousel-link">
+                            <img src="assets/carousel-assets/chainsaw-man.png" alt="chainsaw-man" class="carousel-image chainsaw-man">
+                            <h2 class="carousel-title">CHAINSAW MAN</h2>
+                    </li>
+                    <li class="carousel-item swiper-slide">
+                        <a href="#" class="carousel-link">
+                            <img src="assets/carousel-assets/my-dress-up-darling.png" alt="my-dress-up-darling" class="carousel-image my-dress-up-darling">
+                            <h2 class="carousel-title">MY DRESS UP DARLING</h2>
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </section>
         <section class="anime-picker">
             
             
         </section>
     </main>
+
+    <!-- Linking HTML to SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
 </body>
 
 </html>
