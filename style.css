@@ -18,6 +18,7 @@ html {
     justify-content: center;
     min-height: 100vh;
     background: #F8F9FA;
+    font-family: "inter", sans-serif;
 }
 
 .nav-bar {
