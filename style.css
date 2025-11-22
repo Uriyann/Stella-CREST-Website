@@ -184,6 +184,40 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
+.section-anime-picks{
+    align-self: stretch;
+    font-family: "Genshin Impact DRIP FONT";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #825CFA 0%, #2596ED 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+
+/* PICK YOUR POISON SECTION ##############################  */ 
+.anime_pick {
+    position: relative;
+    top: 20px;
+    left: 100px;
+    padding: 25px;
+    border-radius: 30px;
+    
+    opacity: 0.9;
+    transition: 200ms;
+    
+    
+}
+.anime_pick:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 6px #000000);
+
+}
+
 .carousel-list .carousel-item {
     list-style: none;
 }
