@@ -152,24 +152,32 @@ html {
 
 /* Main Page */
 .main-page {
+    align-items: center;
     background-color: #F8F9FA;
     margin-top: 230px;
 }
 
 /* Carousel Section */
 
-.swiper {
+.carousel-container {
   width: 1580px;
   height: 1000px;
   position: relative;
+  margin: 0 auto;
+}
+
+.swiper {
+    position: relative;
+    margin: 0 auto;
 }
 
 .shop-carousel {
     display: flex;
     width: 1580px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 27px;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -222,7 +230,10 @@ html {
     position: relative;
     overflow: hidden;
     border-radius: 30px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
 }
 
 .carousel-image {
@@ -238,9 +249,18 @@ html {
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: #825CFA !important;
-    width: 60px !important;
-    height: 60px !important;
+    width: 77px !important;
+    height: 77px !important;
+    border-radius: 77px !important;
+    opacity: 0.5 !important;
+    background: #A7A7A7 !important; 
+    z-index: 99999 !important;
+}
+
+.prev-btn,
+.next-btn {
+    stroke-width: 3px;
+    stroke: #E3E3E3;
 }
 
 .swiper-button-prev {
@@ -259,12 +279,12 @@ html {
 }
 
 .swiper-pagination-bullet {
-    width: 18px !important;
-    height: 18px !important;
-    background-color: #3d2c79 !important;
+    width: 14px !important;
+    height: 14px !important;
+    background-color: #c5c5c5 !important;
     opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #5e43b7 !important;
+    background-color: #ffffff !important;
 }
