@@ -1,3 +1,6 @@
+/* Importing Google Fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,15 +9,20 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "inter", sans-serif;
 }
 
-.body {
-    font-family: "Genshin Impact DRIP FONT", "Segoe UI", Roboto, Inter;
+.body-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F8F9FA;
 }
 
 .nav-bar {
     width: 100%;
-    height: 80px;
+    height: 136px;
     background: #fff;
     box-shadow: 0 5px 10.9px 0 rgba(0, 0, 0, 0.41);
     display: flex;
@@ -27,9 +35,13 @@ html {
     z-index: 1000;
 }
 
-.nav-main {
+.nav-left {
     display: flex;
+    width: 559px;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 40px;
+    margin: 23px 761px 14px 120px;
 }
 
 .nav-title {
@@ -45,18 +57,50 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
-.nav-links a.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 100%;
-    height: 3px;
-    background: #6A7CF7;
-    border-radius: 10px;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.nav-btn {
+    color: #1B1B1B;
+    text-align: center;
+    font-family: "Genshin Impact DRIP FONT";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.nav-home .nav-shop {
+    width: 97px;
+}
+
+.nav-featured {
+    width: 157px;
+}
+
+.nav-about {
+    width: 137px;
+}
+
+.nav-btn:hover {
+    color: #805DFA;
+    transition: color 0.3s ease;
 }
 
 /* RIGHT - ICONS */
+.nav-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 27px;
+    margin: 21px 137px 84px -74px;
+}
+
 .website-config {
     display: flex;
     align-items: center;
@@ -64,14 +108,162 @@ html {
 }
 
 .icon {
-    width: 22px;
-    height: 22px;
     cursor: pointer;
+    transition: 0.2s ease;
 }
 
-.language {
+.icon:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 6px #805DFA);
+    opacity: 0.9;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.user-icon {
+    width: 33px;
+    height: 31px;
+}
+
+.notification-icon {
+    width: 26px;
+    height: 30px;
+}
+
+.eng-lang {
+    width: 108px;
+    color: #1B1B1B;
+    text-align: center;
+    font-family: "Genshin Impact DRIP FONT";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dropdown-icon {
+    width: 24px;
+    height: 12px;
+}
+
+/* Main Page */
+.main-page {
+    background-color: #F8F9FA;
+    margin-top: 230px;
+}
+
+/* Carousel Section */
+
+.swiper {
+  width: 1580px;
+  height: 1000px;
+  position: relative;
+}
+
+.shop-carousel {
     display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 14px;
+    width: 1580px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+}
+
+.section-title {
+    align-self: stretch;
+    font-family: "Genshin Impact DRIP FONT";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #825CFA 0%, #2596ED 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.carousel-list .carousel-item {
+    list-style: none;
+}
+
+.carousel-list .carousel-item .carousel-link {
+    height: auto;
+    transition: 0.2s ease;
+    text-decoration: none;
+    user-select: none;
+}
+
+.carousel-list .carousel-link .carousel-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.sakamoto-days {
+    aspect-ratio: 1241 / 817;
+}
+
+.carousel-title {
+    position: absolute;
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    z-index: 1000;
+    bottom: 143px;
+    left: 140px;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.carousel-item:hover .carousel-image {
+    transform: scale(1.05);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #825CFA !important;
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.swiper-button-prev {
+    left: 30px !important;
+}
+
+.swiper-button-next {
+    right: 30px !important;
+}
+
+.swiper-pagination {
+    bottom: 35px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.swiper-pagination-bullet {
+    width: 18px !important;
+    height: 18px !important;
+    background-color: #3d2c79 !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #5e43b7 !important;
 }

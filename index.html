@@ -6,41 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stella-CREST</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Linking HTML to SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 </head>
 
-<body>
+<body class="body-page">
     <header class="header">
         <nav class="nav-bar">
+            <div class="nav-left">
+                <h1 class="nav-title">Stella-CREST</h1>
 
-            <h1 class="nav-title">Stella-CREST</h1>
-
-            <div class="nav-links">
-                <a href="#" class="active">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Featured</a>
-                <a href="#">About Us</a>
+                <div class="nav-links">
+                    <a href="#" class="nav-home active nav-btn">Home</a>
+                    <a href="#" class="nav-shop nav-btn">Shop</a>
+                    <a href="#" class="nav-featured nav-btn">Featured</a>
+                    <a href="#" class="nav-about nav-btn">About Us</a>
+                </div>
             </div>
 
-            <div class="website-config">
-                <img src="assets/search.svg" alt="Search Icon" class="icon search-icon">
-                <img src="assets/user.svg" alt="User Icon" class="icon user-icon">
-                <img src="assets/notification.svg" alt="Notification Icon" class="icon notification">
-                
-                <div class="language">
-                    <span>English</span>
-                    <img src="assets/dropdown.svg" alt="Dropdown Icon" class="icon dropdown-icon">
+            <div class="nav-right">
+                <div class="website-config">
+                    <img src="assets/nav-assets/search_icon.svg" alt="Search Icon" class="icon search-icon">
+                    <img src="assets/nav-assets/user_icon.svg" alt="User Icon" class="icon user-icon">
+                    <img src="assets/nav-assets/notif_icon.svg" alt="Notification Icon" class="icon notification-icon">
+                    <span class="eng-lang">English</span>
+                    <img src="assets/nav-assets/drop_icon.svg" alt="Dropdown Icon" class="icon dropdown-icon">
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="shop-section shop-slideshow">
-            <div class="slide-show">
-                <button class="previous-btn"><img src="assets/prev-btn.png"></button>
-                <img src="assets/sakamoto_days.png" alt="sakamoto_days" class="shideshow-img">
-                <h2 class="shide-title">SAKAMOTO DAYS</h2>
-                <button class="cont-btn"><img src="assets/cont-btn.png"></button>
+    <main class="main-page">
+        <section class="shop-section shop-carousel">
+            <h1 class="section-title">TRENDING</h1>
+
+            <div class="carousel-container swiper">
+                <ul class="carousel-list swiper-wrapper">
+                    <li class="carousel-item swiper-slide">
+                        <a href="#" class="carousel-link">
+                            <img src="assets/carousel-assets/sakamoto-days.png" alt="sakamoto-days" class="carousel-image sakamoto-days">
+                            <h2 class="carousel-title">SAKAMOTO DAYS</h2>
+                    </li>
+                    <li class="carousel-item swiper-slide">
+                        <a href="#" class="carousel-link">
+                            <img src="assets/carousel-assets/chainsaw-man.png" alt="chainsaw-man" class="carousel-image chainsaw-man">
+                            <h2 class="carousel-title">CHAINSAW MAN</h2>
+                    </li>
+                    <li class="carousel-item swiper-slide">
+                        <a href="#" class="carousel-link">
+                            <img src="assets/carousel-assets/my-dress-up-darling.png" alt="my-dress-up-darling" class="carousel-image my-dress-up-darling">
+                            <h2 class="carousel-title">MY DRESS UP DARLING</h2>
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <section class="anime-picker">
@@ -48,6 +71,12 @@
             
         </section>
     </main>
+
+    <!-- Linking HTML to SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
 </body>
 
 </html>
