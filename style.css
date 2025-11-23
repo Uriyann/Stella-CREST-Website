@@ -13,7 +13,6 @@ html {
 }
 
 .body-page {
-    display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -61,7 +60,7 @@ html {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 34px;
     align-self: stretch;
 }
 
@@ -69,7 +68,7 @@ html {
     color: #1B1B1B;
     text-align: center;
     font-family: "Genshin Impact DRIP FONT";
-    font-size: 24px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -152,6 +151,8 @@ html {
 
 /* Main Page */
 .main-page {
+    display: block;
+    width: 100%;
     align-items: center;
     background-color: #f2f2f2;
     margin-top: 230px;
@@ -160,7 +161,7 @@ html {
 /* Carousel Section */
 
 .carousel-container {
-  width: 1580px;
+  max-width: 1580px;
   height: 1000px;
   position: relative;
   margin: 0 auto;
@@ -173,7 +174,7 @@ html {
 
 .shop-carousel {
     display: flex;
-    width: 1580px;
+    max-width: 1580px;
     flex-direction: column;
     align-items: center;
     gap: 27px;
@@ -289,7 +290,7 @@ html {
 /* Anime Section */
 .anime-picker {
     display: flex;
-    width: 1580px;
+    max-width: 1580px;
     flex-direction: column;
     gap: 27px;
     margin: 0 auto;
@@ -331,15 +332,24 @@ html {
     font-weight: 600;
     line-height: normal;
     z-index: 1000;
-    bottom: 20px;
-    left: 20px;
+    bottom: 23px;
+    left: 23px;
 }
 
 .anime-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease
+    transition: transform 0.4s ease;
+}
+
+.blur-box {
+    position: absolute;
+    top: 210px;
+    width: 100%;
+    height: 80px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .view-box {
@@ -387,7 +397,7 @@ html {
 
 .product-section {
     display: flex;
-    width: 1580px;
+    max-width: 1580px;
     flex-direction: column;
     gap: 27px;
     margin: 0 auto;
@@ -588,10 +598,11 @@ html {
     transition: color 0.3s ease;
 }
 
+/* NEWEST PRODUCT */
 .newest-product-section {
     padding-left: 10%;
     display: flex;
-    width: 1580px;
+    max-width: 1580px;
     flex-direction: column;
     gap: 50px;
     margin: 0 auto;
@@ -613,7 +624,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 387px;
+    width: 365px;
     height: 485px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -673,4 +684,233 @@ html {
     flex-shrink: 0;
     aspect-ratio: 169/298;
     object-fit: cover;
+}
+
+.gojo {
+    position: absolute;
+    top: 30px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* FEATURED SECTION */
+
+.featured-section {
+    display: flex;
+    max-width: 1580px;
+    flex-direction: column;
+    gap: 27px;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.featured-card-container {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.featured-card {
+    align-items: center;
+    background: #FFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 365px;
+    height: 485px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.featured-card-img {
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    aspect-ratio: 281/355;
+    display: block;
+    object-fit: contain;
+}
+
+.trading-card-label {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    left: 30px;
+    top: 370px;
+}
+
+.featured-card-label {
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.featured-card-title {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.featured-card-price {
+    color: #EA756A;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.featured-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+    clear: both;
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 43px 140px 73px 140px;
+    align-items: flex-start;
+    gap: 239px;
+    background: #FFF;
+    box-shadow: 0 -6px 10.9px 0 rgba(0, 0, 0, 0.41);
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 239px;
+}
+
+.footer-left {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.footer-logo {
+    width: 358px;
+    height: 153px;
+    aspect-ratio: 358/153;
+}
+
+.footer-title {
+    align-self: stretch;
+    text-align: center;
+    font-family: "Genshin Impact DRIP FONT";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(90deg, #825CFA 0%, #2596ED 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 21px;
+}
+
+.footer-col-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 104px;
+    align-self: stretch;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    flex: 1 0 0;
+}
+
+.footer-col-title {
+    align-items: stretch;
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-link {
+    align-items: stretch;
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.footer-sched {
+    align-items: stretch;
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+
+.footer-btn {
+    width: 100%;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 61px;
+    background: linear-gradient(91deg, #825CFA 1.16%, #2596ED 100.75%);
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.link-logo {
+    width: 24px;
+    height: 24px;
 }
