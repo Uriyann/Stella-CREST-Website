@@ -600,7 +600,6 @@ html {
 
 /* NEWEST PRODUCT */
 .newest-product-section {
-    padding-left: 10%;
     display: flex;
     max-width: 1580px;
     flex-direction: column;
