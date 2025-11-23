@@ -182,6 +182,7 @@ html {
 }
 
 .section-title {
+    padding-left: 0%;
     align-self: stretch;
     font-family: "Genshin Impact DRIP FONT";
     font-size: 32px;
@@ -599,10 +600,11 @@ html {
 
 /* NEWEST PRODUCT */
 .newest-product-section {
+    padding-left: 10%;
     display: flex;
     max-width: 1580px;
     flex-direction: column;
-    gap: 27px;
+    gap: 50px;
     margin: 0 auto;
     margin-top: 130px;
 }
