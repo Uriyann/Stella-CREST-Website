@@ -7,6 +7,9 @@
     <title>Stella-CREST</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- Linking GoogleFont to HTML -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=share" />
+
     <!-- Linking HTML to SwiperJS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
@@ -40,7 +43,7 @@
     </header>
 
     <main class="main-page">
-        <section class="shop-section shop-carousel">
+        <section class="shop-carousel">
             <h1 class="section-title">TRENDING</h1>
 
             <div class="carousel-container swiper">
@@ -49,51 +52,227 @@
                         <a href="#" class="carousel-link">
                             <img src="assets/carousel-assets/sakamoto-days.png" alt="sakamoto-days" class="carousel-image sakamoto-days">
                             <h2 class="carousel-title">SAKAMOTO DAYS</h2>
+                        </a>
                     </li>
                     <li class="carousel-item swiper-slide">
                         <a href="#" class="carousel-link">
                             <img src="assets/carousel-assets/chainsaw-man.png" alt="chainsaw-man" class="carousel-image chainsaw-man">
                             <h2 class="carousel-title">CHAINSAW MAN</h2>
+                        </a>
                     </li>
                     <li class="carousel-item swiper-slide">
                         <a href="#" class="carousel-link">
                             <img src="assets/carousel-assets/my-dress-up-darling.png" alt="my-dress-up-darling" class="carousel-image my-dress-up-darling">
                             <h2 class="carousel-title">MY DRESS UP DARLING</h2>
+                        </a>
                     </li>
                 </ul>
 
                 <div class="swiper-pagination"></div>
 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev">
+                    <img src="assets/carousel-assets/prev-arrow.svg" alt="Previous Button" class="prev-btn">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="assets/carousel-assets/next-arrow.svg" alt="Next Button" class="next-btn">
+                </div>
             </div>
         </section>
 
         <section class="anime-picker">
 
+            <h1 class="section-title">PICK YOUR POISON</h1>
 
+            <div class="anime-container">
+                <!-- First Row -->
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/the-fragrant-flower.png" alt="fragrant flower" class="anime-img">
+                        <h2 class="anime-title">THE FRAGRANT FLOWER</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/frieren.png" alt="frieren" class="anime-img">
+                        <h2 class="anime-title">SOUSU NO FRIEREN</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/spy-x-family.png" alt="spy x family" class="anime-img">
+                        <h2 class="anime-title">SPY X FAMILY</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/one-piece.png" alt="one piece" class="anime-img">
+                        <h2 class="anime-title">ONE PIECE</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/delicious-in-dungeon.png" alt="delicious in dungeon" class="anime-img">
+                        <h2 class="anime-title">DELICIOUS IN DUNGEON</h2>
+                    </a>
+                </div>
 
-            <!--  PICK YOUR POISON   -->
-            <div class="pick-your-poison">
-                <h1 class="section-anime-picks">PICK YOUR POISON</h1>
-                <img src="assets/anime-assets/attack-on-titan.png" alt="attack on titan" class="anime_pick">
-                <img src="assets/anime-assets/black-clover.png" alt="black clover" class="anime_pick">
-                <img src="assets/anime-assets/bocchi-the-rock.png" alt="bocchi the rock" class="anime_pick">
-                <img src="assets/anime-assets/cowboy-bebop.png" alt="attack on titan" class="anime_pick">
-                <img src="assets/anime-assets/dandadan.png" alt="attack on titan" class="anime_pick">
-                <img src="assets/anime-assets/delicious-in-dungeon.png" alt="" class="anime_pick">
-                <img src="assets/anime-assets/demon-slayer.png" alt="" class="anime_pick">
-                <img src="assets/anime-assets/dr-stone.png" alt="" class="anime_pick">
-                <img src="assets/anime-assets/frieren.png" alt="" class="anime_pick">
-                <img src="assets/anime-assets/gachiakuta.png" alt="" class="anime_pick">
-                <img src="assets/anime-assets/kaiju-no-eight.png" alt="" class="anime_pick">
-                <img src="assets/anime-assets/one-piece.png" alt="" class="anime_pick">
-                <img src="assets/anime-assets/spy-x-family.png" alt="" class="anime_pick">
-                <img src="assets/anime-assets/the-fragrant-flower.png" alt="" class="anime_pick">
-                <img src="assets/anime-assets/view-more.png" alt="" class="anime_pick">
+                <!-- Second Row -->
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/dr-stone.png" alt="dr stone" class="anime-img">
+                        <h2 class="anime-title">DR STONE</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/dandadan.png" alt="dan da dan" class="anime-img">
+                        <h2 class="anime-title">DAN DA DAN</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/bocchi-the-rock.png" alt="bochi the rock" class="anime-img">
+                        <h2 class="anime-title">BOCHI THE ROCK</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/gachiakuta.png" alt="gachiakuta" class="anime-img">
+                        <h2 class="anime-title">GACHIAKUTA</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/demon-slayer.png" alt="demon slayer" class="anime-img">
+                        <h2 class="anime-title">DEMON SLAYER</h2>
+                    </a>
+                </div>
+
+                <!-- Third Row -->
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/kaiju-no-eight.png" alt="kaiju no eight" class="anime-img">
+                        <h2 class="anime-title">KAIJU NO. 8</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/attack-on-titan.png" alt="attack on titan" class="anime-img">
+                        <h2 class="anime-title">ATTACK ON TITAN</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/black-clover.png" alt="black clover" class="anime-img">
+                        <h2 class="anime-title">BLACK CLOVER</h2>
+                    </a>
+                </div>
+                <div class="anime-box">
+                    <a href="#" class="anime-link">
+                        <img src="assets/anime-assets/cowboy-bebop.png" alt="cowboy bebop" class="anime-img">
+                        <h2 class="anime-title">COWBOY BEBOP</h2>
+                    </a>
+                </div>
+                <div class="anime-box view-box">
+                    <a href="#" class="anime-link">
+                        <button class="view-more-btn">
+                            <img src="assets/anime-assets/view-btn-asset/view-btn.svg" alt="View Button" class="view-btn">
+                        </button>
+                        <h2 class="anime-view-more">View more Anime's</h2>
+                    </a>
+                </div>
             </div>
         </section>
+
+        <section class="product-section">
+            <h1 class="section-title">STELLA-CREST PRODUCTS</h1>
+            
+            <div class="product-container">
+                <div class="content-left">
+                    <div class="thumbs">
+                        <img src="assets/card-order-assets/full-img-card.png" alt="small full img card" class="thumbs-img">
+                        <img src="assets/card-order-assets/front-img-card.png" alt="small front img card" class="thumbs-img">
+                    </div>
+                    <div class="main-image">
+                        <img src="assets/card-order-assets/full-img-card.png" alt="big full img card" class="main-product-img">
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <!-- Main Content -->
+                    <p class="content-label">Cover</p>
+                    <h1 class="content-title">hololive OFFICIAL CARD GAME Booster Pack｢Enchant Regalia｣ Box</h1>
+                    <p class="price">₱2,646.50</p>
+                    <hr class="line" aria-hidden="true">
+                    <div class="content-description">
+                        <p class="desc">hololive OFFICIAL CARD GAME Booster Pack ｢Enchant Regalia｣ Box</p>
+                        <p class="desc">Release date: September 19 2025</p>
+                        <p class="desc">12 booster pack / Box</p>
+                        <p class="desc">8 cards / Booster pack</p>
+                    </div>
+
+                    <div class="quantity-box">
+                        <label class="quantity-label">Quantity:</label>
+                        <div class="quantity">
+                            <button class="qty-btn">-</button>
+                            <span class="qty">1</span>
+                            <button class="qty-btn">+</button>
+                        </div>
+                    </div>
+
+                    <button class="add-to-cart-btn">Add to Cart</button>
+
+                    <div class="share-box">
+                        <span class="material-symbols-outlined">share</span>
+                        <label class="share-label">Share</label>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Newest Product Section -->
+        <section class="newest-product-section">
+            <h1 class="section-title">ALL OUR NEWEST PRODUCTS</h1>
+
+            <div class="product-card-container">
+                <div class="product-card">
+                    <img src="assets/newest-product-assets/chainsaw-man-product.png" alt="chainsaw man" class="product-card-img">
+                    <div class="figurine-label">
+                        <label class="product-card-label">FiguartsZERO</label>
+                        <h2 class="product-card-title">Chainsaw Man Figure</h2>
+                        <p class="product-card-price">₱1,800.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/newest-product-assets/fragrant-flower-product.png" alt="fragrant flower" class="product-card-img">
+                    <div class="figurine-label">
+                        <label class="product-card-label">FiguartsZERO</label>
+                        <h2 class="product-card-title">Kaoruko Waguri Figure The Fragrant Flower Blooms With Dignity</h2>
+                        <p class="product-card-price">₱1,800.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/newest-product-assets/frieren-product.png" alt="fragrant flower" class="product-card-img frieren">
+                    <div class="figurine-label">
+                        <label class="product-card-label">FiguartsZERO</label>
+                        <h2 class="product-card-title">Frieren Coreful Figure Frieren: Beyond Journey's End</h2>
+                        <p class="product-card-price">₱1,800.00</p>
+                    </div>
+                
+
+                    </div>
+                </div>
+            </div>
     </main>
+
+    <!-- Linking HTML to SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
 </body>
 
 </html>
